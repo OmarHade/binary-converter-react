@@ -1,9 +1,12 @@
 {
+    "homepage": "https://omarhade.github.io/binary-converter",
     "name": "convert-to-binary",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "dev": "vite",
         "build": "vite build",
         "lint": "eslint .",
@@ -27,6 +30,5 @@
         "eslint-plugin-react-refresh": "^0.4.16",
         "globals": "^15.14.0",
         "vite": "^6.0.5"
-    },
-    "homepage": "https://omarhade.github.io/binary-converter"
+    }
 }
